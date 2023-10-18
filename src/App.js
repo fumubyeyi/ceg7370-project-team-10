@@ -1,10 +1,24 @@
+import { useState } from 'react';
 import './App.css';
+
+const PLAYCANVAS_ORIGIN = "https://playcanv.as";
+const PLAYCANVAS_URL = "https://playcanv.as/e/p/NERwz7Rf/";
 
 function App() {
 
+  const [canvasLoaded, setCanvasLoaded] = useState(false);
+
+  window.addEventListener('message', function(event){
+    if (event.origin === PLAYCANVAS_ORIGIN){
+      if(event.data === "app:ready"){
+        setCanvasLoaded(true);
+      }
+    }
+  });
+
   function loadModelEventHandler(){
     let iframe = document.getElementById("inlineFrameExample"); 
-    console.log(iframe.contentWindow.window.pc);
+    console.error(iframe.contentWindow.document);
   }
 
   function setColorEventHandler(e){
@@ -15,7 +29,7 @@ function App() {
     iframe.contentWindow.postMessage({
       event: 'setColor',
       options: { color: color},
-    }, "https://playcanv.as/e/p/NERwz7Rf/");
+    }, PLAYCANVAS_URL);
   }
   return (
     <div className="App">
@@ -27,7 +41,7 @@ function App() {
         <div className='Model-container'>
           <h2 className='text'>
                 Click the button to load sofa model 
-                <button className="btn" onClick={loadModelEventHandler}>Load Sofa</button>
+                <button className="btn" onClick={loadModelEventHandler} disabled={!canvasLoaded}>Load Sofa</button>
             </h2>
         </div>
           <div className='Colors-container'>
@@ -47,7 +61,7 @@ function App() {
             id="inlineFrameExample"
             title="Inline Frame Example"
             loading='lazy'
-            src="https://playcanv.as/e/p/NERwz7Rf/">
+            src={PLAYCANVAS_URL}>
           </iframe>
         </div>
       </div>

@@ -1,0 +1,83 @@
+.navbar-nav {
+    margin-right: auto;
+    margin-bottom: 1rem;
+    position: fixed;
+	
+    }
+	.navbar-collapse
+{
+    justify-content: flex-end;
+}
+.nav-item{
+	
+	padding: 8px;
+	font-size: 18px;
+	font-family: italic ;
+    color: black;
+
+}
+
+.welcome-cat {
+	width: 300px;
+	margin: 17% 34%;
+	text-align: center;
+    margin: 0px auto;
+    background: #227bbebd;
+    padding:20px;
+}
+.welcome-cat:hover {
+    transition-duration: 1.5s;
+    background-color: rgb(31, 133, 180);
+}
+.welcome-cat h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+
+}
+
+
+  body {
+    background: #fefefe;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 100px auto;
+    margin-top: 20px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: bottom;
+    background: linear-gradient(to right, #b6b2b3, #0c0908);
+    margin-top: 120px;
+    text-decoration: none;
+    padding: 10px 5px;
+
+  }
+ 

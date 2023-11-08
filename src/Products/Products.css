@@ -1,0 +1,25 @@
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+
+#products .col-xl-3 {
+  padding: 20px;
+}
+
+.card-body .btn{
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #b6b2b3, #0c0908);
+  text-decoration: none;
+  padding: 10px 5px;
+  border: none;
+}
+
+
+

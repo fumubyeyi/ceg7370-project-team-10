@@ -43,6 +43,13 @@ class Navbar extends React.Component {
                         </Link>
                       </span>
                     </li>
+                    <li className="nav-item">
+                      <span className="nav-link">
+                        <Link spy={true} smooth={true} to="contact">
+                          Contact Us
+                        </Link>
+                      </span>
+                    </li>
                   </ul>
                 </div>
               </div>

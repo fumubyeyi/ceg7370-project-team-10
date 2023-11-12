@@ -1,0 +1,19 @@
+/* Jumbotron.css */
+.jumbotron {
+    background-position: center;
+    background-color: #F2F3F4;
+  }
+  
+  .jumbotron h1 {
+    font-size: larger;
+    text-align: center;
+  }
+  
+  .jumbotron span {
+    color: skyblue;
+  }
+  
+  h1 {
+    padding-top: 5%;
+
+  }

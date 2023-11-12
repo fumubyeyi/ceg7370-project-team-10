@@ -1,0 +1,18 @@
+.welcome-cat {
+	width: 300px;
+	margin: 17% 34%;
+	text-align: center;
+    margin: 0px auto;
+    background: #227bbebd;
+    padding:20px;
+}
+.welcome-cat:hover {
+    transition-duration: 1.5s;
+    background-color: rgb(31, 133, 180);
+}
+.welcome-cat h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+
+}

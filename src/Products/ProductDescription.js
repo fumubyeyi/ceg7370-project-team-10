@@ -6,10 +6,11 @@ const ProductDescription = ({ products }) => {
   const { id } = useParams(); // Get the product ID from the URL
   const navigate = useNavigate();
   // Find the product with the matching ID
-  const product = products.find((item) => item.pid === id); 
+
+  const product = products.find((item) => item.pid === Number(id)); 
 
   const handleViewInAR = () => {
-    navigate(`/products/ar-view/${id}`);
+    navigate(`/products/ar-view/${Number(id)}`);
   }
 
   if (!product) {

@@ -6,43 +6,23 @@ import Category from "./Category/Category";
 import Products from "./Products/Products";
 import ProductDescription from "./Products/ProductDescription";
 import Chair from "./Images/chair.jpeg";
-import Chusionchair from "./Images/chusionchair.jpeg";
-import Drawer from "./Images/drawer.jpeg";
-import sofa from "./Images/sofa.jpeg";
+import CushionChair from "./Images/chusionchair.jpeg";
+import Dresser from "./Images/drawer.jpeg";
+import Sofa from "./Images/sofa.jpeg";
+import Items from "./Data/Items.json"
 import ScrollToTopButton from "./ScrollToTopButton/ScrollToTopButton";
 import "./App.css";
 import ProductARView from "./ProductARView/ProductARView";
 
 class App extends React.Component {
-  state = {
-  products_list :[
-        {
-          pid: "1",
-          image: Chair,
-          title: "All natural nontoxic",
-          subtitle: "Best of Beauty",
-        },
-        {
-          pid: "2",
-          image: Chusionchair,
-          title: "Best deals for",
-          subtitle: "Supplements and Vitamins",
-        },
-        {
-          pid: "3",
-          image: Drawer,
-          title: "Everyday savings on",
-          subtitle: "Fitness and Nutrition",
-        },
-        {
-          pid: "4",
-          image: sofa,
-          title: "Best deals for",
-          subtitle: "Supplements and Vitamins",
-        },
-      ]
-    };
-    
+
+  state = { 
+    products_list : Items.map(item => {
+      return { ...item, 
+        image: item.category === "Chair" ? Chair : item.category === "Couch" ? CushionChair : item.category === "Sofa" ? Sofa : Dresser };
+    })
+ };
+
   render() {
     return (
       <div className="App">

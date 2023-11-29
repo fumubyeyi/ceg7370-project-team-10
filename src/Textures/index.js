@@ -11,7 +11,6 @@ import a_norm from './CushionChair/Pillow/hda017_os_a_NORM.png';
 import flake from './CushionChair/Wood/oak-veneer-white-quarter-cut-heavy-flake.jpg';
 import flake_norm from './CushionChair/Wood/oak-veneer-white-quarter-cut-heavy-flake_NORM.png';
 
-
 let base_url = window.origin;
 
 console.error()
@@ -20,11 +19,11 @@ export const sofa_textures = [
     { 
         category: "Default", 
         images: [
-            { name : "Diffuse", url: `${base_url}${diffuse}` },
-            { name: "Glossiness", url: `${base_url}${glossiness}` },
-            { name: "Normal", url: `${base_url}${normal}` },
-            { name: "Height", url: `${base_url}${height}` },
-            { name: "Reflection", url: `${base_url}${reflection}` }
+            { name : "Diffuse.jpg", url: `${base_url}${diffuse}` },
+            { name: "Glossiness.jpg", url: `${base_url}${glossiness}` },
+            { name: "Normal.jpg", url: `${base_url}${normal}` },
+            { name: "Height.jpg", url: `${base_url}${height}` },
+            { name: "Reflection.jpg", url: `${base_url}${reflection}` }
         ]
     }];
 

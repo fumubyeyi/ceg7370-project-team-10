@@ -1,22 +1,33 @@
 import React from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+
 import "./Products.css";
 
-const ProductDescription = ({ products }) => {
+  const ProductDescription = ({ products }) => {
   const { id } = useParams(); // Get the product ID from the URL
-  const navigate = useNavigate();
-  // Find the product with the matching ID
 
+  // Find the product with the matching ID
   const product = products.find((item) => item.pid === Number(id)); 
 
-  const handleViewInAR = () => {
-    navigate(`/products/ar-view/${Number(id)}`);
+  const PLAYCANVAS_URL = "https://playcanv.as/p/NERwz7Rf/";
+
+  const options = { 
+    modelName : product.name, 
+    position: product.position,
+    rotation: product.rotation,
+    scale: product.scale, 
+    colors: product.colors
   }
+  const encodedstring = encodeURIComponent(JSON.stringify(options));
+
+    const handleViewInAR = () => {
+      //navigate(`/products/ar-view/${Number(id)}`);
+      window.location.href = `${PLAYCANVAS_URL}?data=${encodedstring}`;
+    }
 
   if (!product) {
     return <div>Product not found</div>;
   }
-
   return (
     <>
       <br />
@@ -60,5 +71,4 @@ const ProductDescription = ({ products }) => {
     </>
   );
 };
-
 export default ProductDescription;

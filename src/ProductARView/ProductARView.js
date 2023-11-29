@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useParams} from "react-router-dom";
-import {sofa_textures, cushionchair_textures} from '../Textures/index';
 
 const PLAYCANVAS_ORIGIN = "https://playcanv.as";
 const PLAYCANVAS_URL = "https://playcanv.as/e/p/NERwz7Rf/";
@@ -12,21 +11,6 @@ const ProductARView = ({products}) => {
 
   // Find the product with the matching ID
   const product = products.find((item) => item.pid === Number(id)); 
-
-  let textures = null;
-
-  switch (product.name){
-    case "CushionChair":
-      textures = cushionchair_textures;
-      break;
-    case "Sofa":
-      textures = sofa_textures;
-      break;
-    default:
-      break;
-  }
-
-  
 
   window.addEventListener('message', function(event){
     if (event.origin === PLAYCANVAS_ORIGIN){
@@ -52,8 +36,7 @@ const ProductARView = ({products}) => {
             position: product.position,
             rotation: product.rotation,
             scale: product.scale, 
-            colors: product.colors,
-            textures: textures
+            colors: product.colors
           }
       }, PLAYCANVAS_ORIGIN);
     };

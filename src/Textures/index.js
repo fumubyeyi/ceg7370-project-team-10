@@ -11,39 +11,43 @@ import a_norm from './CushionChair/Pillow/hda017_os_a_NORM.png';
 import flake from './CushionChair/Wood/oak-veneer-white-quarter-cut-heavy-flake.jpg';
 import flake_norm from './CushionChair/Wood/oak-veneer-white-quarter-cut-heavy-flake_NORM.png';
 
+
+let base_url = window.origin;
+
+console.error()
+
 export const sofa_textures = [ 
     { 
         category: "Default", 
         images: [
-            { name : "Diffuse", url: diffuse },
-            { name: "Glossiness", url: glossiness },
-            { name: "Normal", url: normal },
-            { name: "Height", url: height },
-            { name: "Reflection", url: reflection }
+            { name : "Diffuse", url: `${base_url}${diffuse}` },
+            { name: "Glossiness", url: `${base_url}${glossiness}` },
+            { name: "Normal", url: `${base_url}${normal}` },
+            { name: "Height", url: `${base_url}${height}` },
+            { name: "Reflection", url: `${base_url}${reflection}` }
         ]
-
     }];
 
 export const cushionchair_textures = [
     {
         category: "Base", 
         images: [
-            { name: "Flake", url : flake },
-            { name: "Flake-Normal", url: flake_norm }
+            { name: "Flake", url : `${base_url}${flake}` },
+            { name: "Flake-Normal", url: `${base_url}${flake_norm}` }
         ]
     },
     {
         category: "Chair", 
         images: [
-            { name : "Rough", url : rough },
-            { name : "Leather", url: leather }
+            { name : "Rough", url : `${base_url}${rough}` },
+            { name : "Leather", url: `${base_url}${leather}` }
         ]
     },
     {
         category: "Pillow", 
         images: [
-            { name : "A", url : a },
-            { name : "A-Norm", url: a_norm }
+            { name : "A", url : `${base_url}${a}` },
+            { name : "A-Norm", url: `${base_url}${a_norm}` }
         ]
     }
 ];

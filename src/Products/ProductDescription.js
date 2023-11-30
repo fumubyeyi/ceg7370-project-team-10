@@ -9,7 +9,8 @@ import "./Products.css";
   // Find the product with the matching ID
   const product = products.find((item) => item.pid === Number(id)); 
 
-  const PLAYCANVAS_URL = "https://playcanv.as/p/NERwz7Rf/";
+  //const PLAYCANVAS_URL = "https://playcanv.as/p/NERwz7Rf/";
+  const PLAYCANVAS_URL = "https://playcanv.as/p/FKa9Uaiv";
 
   const options = { 
     modelName : product.name, 

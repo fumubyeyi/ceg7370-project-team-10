@@ -9,19 +9,26 @@ import Chair from "./Images/chair.jpeg";
 import CushionChair from "./Images/chusionchair.jpeg";
 import Dresser from "./Images/drawer.jpeg";
 import Sofa from "./Images/sofa.jpeg";
-import Items from "./Data/Items.json"
+import Items from "./Data/Items.json";
 import ScrollToTopButton from "./ScrollToTopButton/ScrollToTopButton";
 import "./App.css";
 import ProductARView from "./ProductARView/ProductARView";
 
 class App extends React.Component {
+  state = {
+    products_list: Items.map((item) => {
+      let image = Dresser;
+      if (item.category === "Chair") {
+        image = Chair;
+      } else if (item.category === "Couch") {
+        image = CushionChair;
+      } else if (item.category === "Sofa") {
+        image = Sofa;
+      }
 
-  state = { 
-    products_list : Items.map(item => {
-      return { ...item, 
-        image: item.category === "Chair" ? Chair : item.category === "Couch" ? CushionChair : item.category === "Sofa" ? Sofa : Dresser };
-    })
- };
+      return { ...item, image };
+    }),
+  };
 
   render() {
     return (
@@ -38,7 +45,7 @@ class App extends React.Component {
                 <ScrollToTopButton />
               </>
             }
-          /> 
+          />
           <Route
             path="/products"
             element={<Products products={this.state.products_list} />}

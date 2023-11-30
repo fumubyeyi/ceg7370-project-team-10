@@ -47,19 +47,22 @@ import "./Products.css";
               <p className="card-text">{product.subtitle}</p>
 
               <div className="row pb-3">
-                <div className="col-4">
-                  <button onClick={handleViewInAR} className="btn btn-primary btn-block">
+                <div className="col-12 col-md-4 mb-3 mb-md-0">
+                  <button
+                    onClick={handleViewInAR}
+                    className="btn btn-primary btn-block"
+                  >
                     View in AR
                   </button>
                 </div>
               </div>
               <div className="row">
-                <div className="col-4">
+                <div className="col-12 col-md-4 mb-3 mb-md-0">
                   <button className="btn btn-primary btn-block">
                     Add to Cart
                   </button>
                 </div>
-                <div className="col-4">
+                <div className="col-12 col-md-4">
                   <Link to="/products" className="btn btn-secondary btn-block">
                     Back to Products
                   </Link>

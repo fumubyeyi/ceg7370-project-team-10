@@ -17,7 +17,7 @@ The application consits of the following features:
   3. Position, rotate, and scale model appropriately.
   4. Change color and textures of rendered models.
 
-The PlayCanvas source code can be found at https://playcanvas.com/project/1151377/overview/furnireality
+The PlayCanvas source code can be found at [FurniReality PlayCanvas Application.](https://playcanvas.com/project/1151377/overview/furnireality)
 
 ## Resources
 

@@ -1,8 +1,26 @@
-# dc-project-team-10
+# FurniReality
 
-# Getting Started with Create React App
+Furnireality is web application that allows users to view 3D models in an Augmented Reality scene.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+
+The application consists of simple functionalities such as:
+  1. List of items.
+  2. Sorting.
+  3. View single item details.
+  4. Navigate to a PlayCanvas application.
+
+The PlayCanvas application takes input model properties such as name, position and scale and dynamically renders the model in 3D views. Witha button click users can switch to view the rendered model in AR scene - using a camera to immerse and interact with the models in the our surroundings.
+The application consits of the following features:
+  1. Load 3D model in the AR scene.
+  2. Position, rotate, and scale model appropriately.
+  3. Change color and textures of rendered models
+
+The PlayCanvas source code can be found at https://playcanvas.com/project/1151377/overview/furnireality
+
+## Resources
+
+The 3D models are downloaded from [cgtrader](https://www.cgtrader.com/) for educational purposes only.
 
 ## Available Scripts
 
@@ -31,42 +49,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application is deployed to an AWS EC2 Instance that is currently not running. 

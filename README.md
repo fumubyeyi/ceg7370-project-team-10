@@ -10,11 +10,12 @@ The application consists of simple functionalities such as:
   3. View single item details.
   4. Navigate to a PlayCanvas application.
 
-The PlayCanvas application takes input model properties such as name, position and scale and dynamically renders the model in 3D views. Witha button click users can switch to view the rendered model in AR scene - using a camera to immerse and interact with the models in the our surroundings.
+The PlayCanvas application takes input model properties such as name, position and scale and dynamically renders the model entity in 3D view. With a button click users can switch to view the rendered model in AR scene - using a camera to immerse and interact with the models in the our surroundings.
 The application consits of the following features:
-  1. Load 3D model in the AR scene.
-  2. Position, rotate, and scale model appropriately.
-  3. Change color and textures of rendered models
+  1. Extract input parameters from the URL query string; input data includes: model name, 3D vector position, rotation and scale values, and a lists of colors. 
+  2.  Load 3D model in the AR scene.
+  3. Position, rotate, and scale model appropriately.
+  4. Change color and textures of rendered models.
 
 The PlayCanvas source code can be found at https://playcanvas.com/project/1151377/overview/furnireality
 

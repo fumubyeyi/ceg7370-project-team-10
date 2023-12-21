@@ -72,5 +72,22 @@
     "position": { "x": 0, "y": 0.01, "z": 0 },
     "rotation": { "x": 0, "y": 130, "z": 0 },
     "scale": { "x": 0.005, "y": 0.005, "z": 0.005 }
+  },
+  {
+    "pid": 5,
+    "name": "Modern Sofa",
+    "title": "Modern Sofa",
+    "subtitle": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+    "price": 100.47,
+    "category": "ModernSofa",
+    "image": null,
+    "colors": [
+      { "name": "Barn Red", "hex": "#7C0A02" },
+      { "name": "Battery Charged Blue", "hex": "#1DACD6" },
+      { "name": "Battleship Grey", "hex": "#848482" }
+    ],
+    "position": { "x": 0, "y": 0.01, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 0 },
+    "scale": { "x": 0.005, "y": 0.005, "z": 0.005 }
   }
 ]

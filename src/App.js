@@ -9,6 +9,7 @@ import Chair from "./Images/chair.jpeg";
 import CushionChair from "./Images/chusionchair.jpeg";
 import Dresser from "./Images/drawer.jpeg";
 import Sofa from "./Images/sofa.jpeg";
+import ModernSofa from './Images/modern sofa.png';
 import Items from "./Data/Items.json";
 import ScrollToTopButton from "./ScrollToTopButton/ScrollToTopButton";
 import "./App.css";
@@ -24,6 +25,9 @@ class App extends React.Component {
         image = CushionChair;
       } else if (item.category === "Sofa") {
         image = Sofa;
+      }
+      else {
+        image = ModernSofa;
       }
 
       return { ...item, image };

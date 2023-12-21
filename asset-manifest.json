@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.f5e3e89c.css",
+    "main.js": "/react-gh-pages/static/js/main.ccf2e285.js",
+    "static/js/496.f52ec741.chunk.js": "/react-gh-pages/static/js/496.f52ec741.chunk.js",
+    "static/media/modern sofa.png": "/react-gh-pages/static/media/modern sofa.cccf27926558a48fc060.png",
+    "static/media/chusionchair.jpeg": "/react-gh-pages/static/media/chusionchair.92d23dac49b8d8989101.jpeg",
+    "static/media/chair.jpeg": "/react-gh-pages/static/media/chair.d67a457bb5bb0a2d2ea2.jpeg",
+    "static/media/logo.png": "/react-gh-pages/static/media/logo.3c2d6da847bd2bb5d188.png",
+    "static/media/drawer.jpeg": "/react-gh-pages/static/media/drawer.bb3af56ae19fd99f17e7.jpeg",
+    "static/media/sofa.jpeg": "/react-gh-pages/static/media/sofa.8f69eda832a1eeea9766.jpeg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.f5e3e89c.css.map": "/react-gh-pages/static/css/main.f5e3e89c.css.map",
+    "main.ccf2e285.js.map": "/react-gh-pages/static/js/main.ccf2e285.js.map",
+    "496.f52ec741.chunk.js.map": "/react-gh-pages/static/js/496.f52ec741.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5e3e89c.css",
+    "static/js/main.ccf2e285.js"
+  ]
+}

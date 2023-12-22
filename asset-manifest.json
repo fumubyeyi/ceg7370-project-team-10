@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/furniture-ar/static/css/main.f5e3e89c.css",
-    "main.js": "/furniture-ar/static/js/main.d928255b.js",
+    "main.js": "/furniture-ar/static/js/main.d8232d31.js",
     "static/js/496.f52ec741.chunk.js": "/furniture-ar/static/js/496.f52ec741.chunk.js",
     "static/media/modern sofa.png": "/furniture-ar/static/media/modern sofa.cccf27926558a48fc060.png",
     "static/media/chusionchair.jpeg": "/furniture-ar/static/media/chusionchair.92d23dac49b8d8989101.jpeg",
@@ -11,11 +11,11 @@
     "static/media/sofa.jpeg": "/furniture-ar/static/media/sofa.8f69eda832a1eeea9766.jpeg",
     "index.html": "/furniture-ar/index.html",
     "main.f5e3e89c.css.map": "/furniture-ar/static/css/main.f5e3e89c.css.map",
-    "main.d928255b.js.map": "/furniture-ar/static/js/main.d928255b.js.map",
+    "main.d8232d31.js.map": "/furniture-ar/static/js/main.d8232d31.js.map",
     "496.f52ec741.chunk.js.map": "/furniture-ar/static/js/496.f52ec741.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5e3e89c.css",
-    "static/js/main.d928255b.js"
+    "static/js/main.d8232d31.js"
   ]
 }

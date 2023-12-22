@@ -9,7 +9,6 @@ import "./Products.css";
   // Find the product with the matching ID
   const product = products.find((item) => item.pid === Number(id)); 
 
-  //const PLAYCANVAS_URL = "https://playcanv.as/p/NERwz7Rf/";
   const PLAYCANVAS_URL = "https://playcanv.as/p/FKa9Uaiv";
 
   const options = { 
@@ -22,7 +21,6 @@ import "./Products.css";
   const encodedstring = encodeURIComponent(JSON.stringify(options));
 
     const handleViewInAR = () => {
-      //navigate(`/products/ar-view/${Number(id)}`);
       window.location.href = `${PLAYCANVAS_URL}?data=${encodedstring}`;
     }
 
@@ -48,12 +46,12 @@ import "./Products.css";
 
               <div className="row pb-3">
                 <div className="col-12 col-md-4 mb-3 mb-md-0">
-                  <button
-                    onClick={handleViewInAR}
+                  <Link
                     className="btn btn-primary btn-block"
+                    to={`${PLAYCANVAS_URL}?data=${encodedstring}`}
                   >
                     View in AR
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="row">
